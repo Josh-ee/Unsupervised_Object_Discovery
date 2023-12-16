@@ -2,6 +2,16 @@
 
 Developed an LLM-aware computer vision algorithm - dependent on physically probing the built environment - equipping a quadruped unmanned ground vehicle (UGV) for unsupervised object detection.
 
+
+<div align="center">
+  <img src="media/read_me.gif" alt="Description">
+</div>
+
+To view final results:
+- [Project Website](https://sites.google.com/berkeley.edu/unsupervised-object-discovery/unsupervised-object-discovery-via-interaction)
+
+
+
 This repo contains the forked versions of the following repos:
 - https://github.com/alonrot/unitree_ros_to_real.git
 - https://github.com/alonrot/unitree_legged_sdk_from_inside_robot.git
