@@ -7,6 +7,9 @@ Developed an LLM-aware computer vision algorithm - dependent on physically probi
   <img src="media/read_me.gif" alt="Description">
 </div>
 
+
+</br>
+
 To view final results:
 - [Project Website](https://sites.google.com/berkeley.edu/unsupervised-object-discovery/unsupervised-object-discovery-via-interaction)
 
