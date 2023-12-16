@@ -1,4 +1,5 @@
-# go1_ros_real
+# Unsupervised Object Discovery via Interaction
+
 
 This repo contains the forked versions of the following repos:
 - https://github.com/alonrot/unitree_ros_to_real.git
