@@ -34,7 +34,7 @@ class MainNode:
         self.cmd_topic = '/high_cmd_to_robot'  # High commands control topic                                 
 
         self.error_threshold = 0.2  # Maximum acceptable norm of error   
-        self.second_try = True      # Tells robot when to try picking up cup a second time          
+        self.second_try = True      # The robot gets 1 second try after failing to pick up a cup
 
         # Error defined as [dx, dy, dyaw]
         self.Kp = np.diag([0.5, 0.5, 0])   # PID Proportional coefficient            
@@ -293,16 +293,19 @@ class MainNode:
             else:
                 self.action_list.append('cup still there, it is immovable')
                 rospy.loginfo('Cup is immovable')
-                self.log()
+                self.nb_cups -= 1
 
-                # # Searching for another cup:
-                # self.state = 'looking for other cup'
-                # while self.cup_coords is None:
-                #     self.look_around()
-                #     rospy.sleep(0.2)
-                # self.state = 'pickup'
-                # self.waypoint = self.cup_coords
-                # self.main()
+                if self.nb_cups == 0:   # Have all of the cups been picked up?
+                    self.log()
+
+                else:
+                    self.state = 'looking for other cup'
+                    while self.cup_coords is None:
+                        self.look_around()
+                        rospy.sleep(0.2)
+                    self.state = 'pickup'
+                    self.waypoint = self.cup_coords
+                    self.main()
 
         else:   # Cup is not here anymore, meaning it was picked up
             self.error_threshold = 0.25
