@@ -6,7 +6,7 @@ import re
 from openai import OpenAI
 
 # Use your OpenAI key (starts with 'sk-')
-client = OpenAI(api_key ='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')
+client = OpenAI(api_key ='sk-')
 
 with open('src/llm_integration/ros_log_latest_run.txt', 'r') as file:
     # Read the entire content of the file into a single string
