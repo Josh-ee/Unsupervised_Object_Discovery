@@ -1,5 +1,6 @@
 # Unsupervised Object Discovery via Interaction
 
+Developed an LLM-aware computer vision algorithm - dependent on physically probing the built environment - equipping a quadruped unmanned ground vehicle (UGV) for unsupervised object detection.
 
 This repo contains the forked versions of the following repos:
 - https://github.com/alonrot/unitree_ros_to_real.git
