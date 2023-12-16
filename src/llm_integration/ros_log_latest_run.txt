@@ -1,0 +1,24 @@
+starting
+cup detected
+going to cup
+trying to pick up cup
+stepping back to check if cup is picked up
+cup is still here, trying once more to pick it up
+going to cup
+trying to pick up cup
+stepping back to check if cup is picked up
+successfully picked up the cup
+looking for goal
+heading to goal
+goal reached, is it the right one?
+wrong goal, looking for other one
+heading to goal
+goal reached, is it the right one?
+correct goal reached
+looking for other cup
+found cup!
+going to cup
+trying to pick up cup
+stepping back to check if cup is picked up
+cup still there, it is immovable
+end
