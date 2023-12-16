@@ -29,8 +29,6 @@ Since both repos have to be in the same ROS workspace to move the robot, our tea
 
 ---
 
-# Setup
-
 Before running the experiment, make sure to:
 - copy the files from src/pi_files to the Raspberry Pi
 - copy the files from src/nano_files to the main Jetson Nano (192.168.123.13)
