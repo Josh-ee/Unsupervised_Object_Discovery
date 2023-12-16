@@ -1,0 +1,7 @@
+__pycache__
+build
+devel
+.catkin_workspace
+src/CMakeLists.txt
+
+.~lock.git_commands.odt#

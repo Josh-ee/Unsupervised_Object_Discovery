@@ -1,0 +1,3 @@
+topic_subscribe_to_user_commands: "low_cmd_to_robot"
+topic_publish_robot_state: "low_state_from_robot"
+loop_frequency: 500 # Hz

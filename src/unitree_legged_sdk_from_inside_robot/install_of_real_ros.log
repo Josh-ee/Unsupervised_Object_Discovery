@@ -1,0 +1,52 @@
+NOTE: This repo was designed for ubuntu 18.04 and ROS melodic. We are using Ubuntu 20.04 and ROS noetic
+
+
+check ubuntu version: lsb_release -a
+
+
+check ROS version: rosversion -d
+
+---
+
+
+mkdir -p catkin_real_robot_ws/src
+cd catkin_real_robot_ws/src
+
+
+
+### Unitree legged sdk
+git clone https://github.com/unitreerobotics/unitree_legged_sdk.git
+git checkout tags/3.4.2 -b dev_amarco
+
+
+### Ros to real
+git clone https://github.com/unitreerobotics/unitree_ros_to_real.git
+git checkout tags/v3.4.0 -b dev_amarco
+
+
+
+
+
+
+Unable to find either executable 'empy' or Python module 'em'...  try
+https://github.com/ros/catkin/issues/1132
+
+catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.8
+
+
+
+
+Had to modify catkin_real_robot_ws/src/unitree_ros_to_real/unitree_legged_real/CMakeLists.txt (see comments added by 'amarco')
+
+
+
+# Building only a paricular package:
+https://answers.ros.org/question/54178/how-to-build-just-one-package-using-catkin_make/
+
+
+
+
+---
+
+
+

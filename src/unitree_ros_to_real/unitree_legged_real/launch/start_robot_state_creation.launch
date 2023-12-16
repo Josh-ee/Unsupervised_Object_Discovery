@@ -1,0 +1,15 @@
+<launch>
+
+    <node pkg="unitree_legged_real"
+          type="node_robot_state_creation.py" 
+          name="node_robot_state_creation"
+          respawn="false"
+          output="screen"
+          required="true">
+    </node>
+</launch>
+
+
+
+
+<!-- See http://wiki.ros.org/roslaunch/XML/node -->

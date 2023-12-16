@@ -1,0 +1,142 @@
+
+
+# Moving only one joint:
+
+2022_11_22_16_43_76: from laptop (good one)
+2022_11_22_16_46_34: inside the robot
+
+
+
+the problem is very likley the comm.h
+
+
+
+
+
+
+# Inside the robot:
+# position:
+2022_01_13_16_45_19: all good
+2022_01_13_16_52_19: longer, 15 sec, Kp=5
+
+2022_01_13_16_55_22: Kp=10
+
+2022_01_13_16_56_40: Kp=7.5
+
+
+# position:
+Kd = 1.0
+2022_01_13_16_58_50: Kp=5
+
+2022_01_13_17_01_11: Kp=7.5
+
+2022_01_13_17_02_24: Kp=10.0 (pressed on the hed downwards with my finger to avoid balancing, towards the end of the move...)
+
+
+# standup:
+2022_01_13_17_07_51: Kp=5
+2022_01_13_17_09_18: Kp=7.5 (touching the front left leg)
+
+2022_01_13_17_21_06: Kp=5 (after correcting the code and reading properly the initial position)
+2022_01_13_17_22_18: Kp=7.5
+2022_01_13_17_23_05: Kp=10
+
+
+# After fixing the code regarding the gains:
+2022_01_13_17_48_11: Kp=5
+
+# After fixing the code regarding the gains, for good:
+2022_01_13_18_04_10: Kp=5
+2022_01_13_18_06_49: Kp=7.5
+2022_01_13_18_07_31: Kp=10.0
+
+2022_01_13_18_09_25: Kp=10.0, touching the front legs
+2022_01_13_18_10_36: Kp=20.0, touching the 4 legs
+2022_01_13_18_11_37: Kp=20.0, Kd=2.0, touching many
+2022_01_13_18_14_05: Kp=20.0, Kd=2.0, seeing if the robot can stay on the ground
+
+(copyed all data till here)
+
+
+
+2022_01_13_18_45_23: Kp=10, Kd=1.0, standing up from the ground
+2022_01_13_18_52_28: Kp=20.0, Kd=2.0, same, but still not working
+2022_01_13_19_01_16: Kp=20.0, Kd=2.0, same, worked!
+
+2022_01_13_18_26_02: same as above, but logging more data, not video-recorded
+
+2022_01_13_18_30_55: same as above, but logging more data (i think) , vidoe recorde
+
+
+
+
+# Psotion ling on the floor:
+qInit[0] = -0.303926
+qInit[1] = 1.15218
+qInit[2] = -2.69135
+qInit[3] = 0.346799
+qInit[4] = 1.17985
+qInit[5] = -2.73951
+qInit[6] = -0.348858
+qInit[7] = 1.15957
+qInit[8] = -2.75885
+qInit[9] = 0.348737
+qInit[10] = 1.20456
+qInit[11] = -2.79926
+
+
+# target position used: float q_target[12] = {0.015, 0.75, -1.45, 0.015, 0.75, -1.45, 0.015, 0.75, -1.45, -0.015, 0.75, -1.45};
+
+
+
+
+# Nov 29, 2022:
+2022_01_13_18_22_50: Kp=30, Kd=2
+
+
+
+
+2022_01_13_18_49_21: Kp=30, Kd=2, going up and down!!
+
+2022_01_13_18_53_47: Kp=40, Kd=2, same
+
+2022_01_13_19_07_44: Kp=40, Kd=2, same (after analyzing pltos)
+
+
+2022_01_13_19_09_17: Kp=40, Kd=2, 4 seconds for movement
+
+2022_01_13_19_24_16: Kp=40, Kd=2, 2 seconds for movement
+
+
+
+2022_01_13_19_28_46: Kp=40, Kd=2, 2 seconds for movement (video recorded, 14:00)
+
+qInit[0] = -0.426913
+qInit[1] = 1.07988
+qInit[2] = -2.6027
+qInit[3] = 0.498489
+qInit[4] = 1.09138
+qInit[5] = -2.63725
+qInit[6] = -0.512356
+qInit[7] = 1.05699
+qInit[8] = -2.65154
+qInit[9] = 0.557954
+qInit[10] = 1.07958
+qInit[11] = -2.65481
+qStandUp[0] = -0.114934
+qStandUp[1] = 0.745857
+qStandUp[2] = -1.56228
+qStandUp[3] = 0.14836
+qStandUp[4] = 0.749308
+qStandUp[5] = -1.55949
+qStandUp[6] = -0.137944
+qStandUp[7] = 0.721029
+qStandUp[8] = -1.59098
+qStandUp[9] = 0.150722
+qStandUp[10] = 0.730778
+qStandUp[11] = -1.56426
+
+
+2022_11_29_17_45_16: as above, but now from the laptop using ethernet cable
+
+2022_11_29_17_46_56: as above, video recorded

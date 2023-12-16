@@ -1,0 +1,8 @@
+topic_subscribe_to_user_commands: "high_cmd_to_robot"
+topic_publish_robot_state: "high_state_from_robot"
+loop_frequency: 500 # Hz
+
+localPort: 8090
+# targetIP: "192.168.123.161" # Ethernet connection
+targetIP: "192.168.12.1" # Robot's Wifi
+targetPort: 8082

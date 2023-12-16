@@ -1,0 +1,26 @@
+<launch>
+
+    <!-- <env name="ROS_LOG_DIR" value= /> http://wiki.ros.org/roslaunch/XML/env -->
+    <!-- <env name="ROS_IP" value="192.168.123.162" /> -->
+
+<!--     <arg name="topic_subscribe_to_user_commands" default="low_cmd_to_robot"/>
+    <arg name="topic_publish_robot_state" default="low_state_from_robot"/>
+    <arg name="loop_frequency" default="500"/> -->
+
+    <node pkg="unitree_legged_real"
+          type="ros_real_robot_interface_go1_highlevel" 
+          name="node_ros_real_robot_interface_go1_highlevel"
+          respawn="false"
+          output="screen"
+          required="true">
+<!--           args="$(arg topic_subscribe_to_user_commands) 
+                $(arg topic_publish_robot_state)
+                $(arg Nsteps_read_initial_position)
+                $(arg loop_frequency)" /> -->
+          <rosparam command="load" file="$(find unitree_legged_real)/config/cfg_ros_real_robot_interface_go1_highlevel.yaml" />
+    </node>
+</launch>
+
+
+
+<!-- See http://wiki.ros.org/roslaunch/XML/node -->

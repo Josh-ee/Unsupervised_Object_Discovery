@@ -1,0 +1,2 @@
+bool start
+bool stop
