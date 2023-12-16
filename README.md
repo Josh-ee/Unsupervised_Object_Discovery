@@ -14,7 +14,6 @@ To view final results:
 - [Project Website](https://sites.google.com/berkeley.edu/unsupervised-object-discovery/unsupervised-object-discovery-via-interaction)
 - [Presenatation Deck](https://docs.google.com/presentation/d/1bJXGHLaNxGCH2Xnr3C20kdvZxDNgF2fkvTv9KjHSBMs/edit?usp=sharing)
 
-</br>
 
 ---
 
@@ -28,6 +27,7 @@ This code would not be possible without the amazing work of alonrot, and his [do
 
 Since both repos have to be in the same ROS workspace to move the robot, our team found it easier to combine into a single repo
 
+---
 
 # Setup
 
